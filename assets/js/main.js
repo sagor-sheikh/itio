@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (() => {
       toggleButtons.forEach((toggleButton) => {
         toggleButton.addEventListener("click", () => {
-          // toggleButton.firstElementChild.lastElementChild.classList.toggle("up");
+          toggleButton.firstElementChild.lastElementChild.classList.toggle("up");
           toggleButton.lastElementChild.classList.toggle("open");
         });
       });
