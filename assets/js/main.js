@@ -25,6 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     })();
+    
+    (() => {
+      toggleButtons.forEach((toggleButton) => {
+        toggleButton.addEventListener("click", () => {
+          toggleButton.firstElementChild.lastElementChild.classList.toggle("up");
+          toggleButton.lastElementChild.classList.toggle("open");
+        });
+      });
+    })();
 
     // Profile
     // $(".user_chat").on("click", function () {
