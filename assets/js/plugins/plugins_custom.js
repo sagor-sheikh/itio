@@ -1,6 +1,17 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
   $(function ($) {
+
+
+
+    // Hero Section button click to popup play video jquery plugin code.
+    $('.video').magnificPopup({
+      type: 'iframe'
+    });
+
+
+
+
     // Feedback Section Slick slider
     // $("card_slider").slick({
     //   centerMode: true,

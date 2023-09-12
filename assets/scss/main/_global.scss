@@ -1,6 +1,8 @@
 :root {
   --body-font: 'Inter', sans-serif;
 
+  --transition: 0.35s linear;
+
   --primary-color: #0084ff;
   --secondary-color: #3fca90;
 
@@ -250,6 +252,7 @@ a {
   outline: none;
   transition: 0.3s;
   color: var(--primary-text-clr);
+
   &:focus,
   &:hover {
     text-decoration: none;
@@ -581,13 +584,129 @@ img {
 .padding-top {
   padding-top: 120px;
 }
+
 .padding-bottom {
   padding-bottom: 120px;
 }
+
 .padding-top-bottom {
   padding: 120px 0px;
 }
+
+.pd-hero-top {
+  padding-top: 96px;
+}
+
 // Responsive Starts
+// Button Styles
+.button-header {
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  background-color: #16A87A;
+  $btn-color: #F66135;
+  color: white;
+  transition: 0.8s linear;
+  &:hover {
+    color: #fff;
+    transition-delay: 0.2s;
+    animation: ani500 0.6s forwards;
+    background: radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 6em 6em/1em 1em,
+      radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 0 0/1em 1em;
+      
+  }
+  @keyframes ani500 {
+    100% {
+      background-size: 2.375em 2.375em, 0.1em 0.1em;
+    }
+  }
+}
+
+.button1 {
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #35F6A5;
+  border-right: 1px solid #35F6A5;
+  border-bottom: 3px solid #35F6A5;
+  border-left: 3px solid #35F6A5;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+
+  $btn-color: #F66135;
+  border-color: #35F6A5;
+  color: white;
+
+  &:hover {
+    border-top: 1px solid #F66135;
+    border-right: 1px solid #F66135;
+    border-bottom: 3px solid #F66135;
+    border-left: 3px solid #F66135;
+    color: #fff;
+    transition-delay: 0.2s;
+    animation: ani500 0.6s forwards;
+    background: radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 6em 6em/1em 1em,
+      radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 0 0/1em 1em;
+  }
+  @keyframes ani500 {
+    100% {
+      background-size: 2.375em 2.375em, 0.1em 0.1em;
+    }
+  }
+}
+
+.button2 {
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #F66135;
+  border-right: 1px solid #F66135;
+  border-bottom: 3px solid #F66135;
+  border-left: 3px solid #F66135;
+  border-radius: 40px;
+  background-color: #F66135;
+  text-align: center;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  $btn-color: #16A87A;
+  border-color: #F66135;
+  color: white;
+
+  &:hover {
+    border-top: 1px solid #16A87A;
+    border-right: 1px solid #16A87A;
+    border-bottom: 3px solid #16A87A;
+    border-left: 3px solid #16A87A;
+    color: white;
+    transition-delay: 0.2s;
+    animation: ani500 0.6s forwards;
+    background: radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 6em 6em/1em 1em,
+      radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 0 0/1em 1em;
+  }
+  @keyframes ani500 {
+    100% {
+      background-size: 2.375em 2.375em, 0.1em 0.1em;
+    }
+  }
+}
+
+
+
+
+
 @media (max-width: 1920px) {}
 
 @media (max-width: 1799px) {}
@@ -604,9 +723,30 @@ img {
     line-height: 150%;
   }
 }
+
 @media (max-width: 991px) {
 
   //typography
+  .display1 {
+    font-size: 72px;
+    line-height: 120%;
+  }
+
+  .display2 {
+    font-size: 64px;
+    line-height: 120%;
+  }
+
+  .display3 {
+    font-size: 56px;
+    line-height: 120%;
+  }
+
+  .display4 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+
   .fs-one,
   h1,
   h1>a {
@@ -697,7 +837,17 @@ img {
   .padding-top-bottom {
     padding: 70px 0px;
   }
+  .button-header{
+    padding: 10px 20px;
+  }
+  .button1 {
+    padding: 10px 20px;
+  }
+  .button2 {
+    padding: 10px 20px;
+  }
 }
+
 @media (max-width: 767px) {
 
   // All Heading titles Ends
@@ -777,11 +927,31 @@ img {
     margin-bottom: 45px;
   }
 }
+
 @media (max-width: 575px) {
 
   //section padding margin  ends
   //typography
-  //typography
+  .display1 {
+    font-size: 64px;
+    line-height: 120%;
+  }
+
+  .display2 {
+    font-size: 56px;
+    line-height: 120%;
+  }
+
+  .display3 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+
+  .display4 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+
   .fs-one,
   h1,
   h1>a {
@@ -844,16 +1014,33 @@ img {
   span {
     font-size: 14px;
   }
+
   // Section Paddings
 
-.padding-top {
-  padding-top: 50px;
+  .padding-top {
+    padding-top: 50px;
+  }
+
+  .padding-bottom {
+    padding-bottom: 50px;
+  }
+
+  .padding-top-bottom {
+    padding: 50px 0px;
+  }
+
+  .pd-hero-top {
+    padding-top: 60px;
+  }
+  .button-header{
+    padding: 8px 16px;
+  }
+  .button1 {
+    padding: 8px 16px;
+  }
+  .button2 {
+    padding: 8px 16px;
+  }
 }
-.padding-bottom{
-  padding-bottom: 50px;
-}
-.padding-top-bottom{
-  padding: 50px 0px;
-}
-}
+
 @media (max-width: 480px) {}

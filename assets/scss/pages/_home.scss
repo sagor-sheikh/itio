@@ -1,0 +1,47 @@
+// Banner Section Styles
+.hero-area {
+    background-image: url("../images/hero-banner.png"), url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover, auto;
+    background-position: center, bottom left;
+    position: relative;
+    background-color: white;
+
+    .hero-svg {
+        fill: white;
+    }
+}
+
+// Banner Section Style Ends
+// About Section Style Starts
+.aboutus {
+    &__right {
+        &-top {
+            color: var(--text-green);
+            font-weight: 500;
+        }
+
+        h2 {
+            font-weight: 600;
+        }
+
+    }
+
+    &__item {
+        &-right {
+            img {
+                max-width: fit-content;
+            }
+        }
+    }
+
+    &__left {
+        &-count {
+            background-color: var(--text-green);
+            top: 0;
+            right: 36%;
+        }
+    }
+}
+
+// About Section Style Ends

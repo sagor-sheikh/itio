@@ -8,8 +8,10 @@
 @import "../css/plugins/all.min.css";
 @import "../css/plugins/animate.css";
 @import "../css/plugins/nice-select.css";
+@import "../css/plugins/magnific-popup.css";
 :root {
   --body-font: "Inter", sans-serif;
+  --transition: 0.35s linear;
   --primary-color: #0084ff;
   --secondary-color: #3fca90;
   --pc-one: #39B54A;
@@ -576,6 +578,104 @@ img {
   padding: 120px 0px;
 }
 
+.pd-hero-top {
+  padding-top: 96px;
+}
+
+.button-header {
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  background-color: #16A87A;
+  color: white;
+  transition: 0.8s linear;
+}
+.button-header:hover {
+  color: #fff;
+  transition-delay: 0.2s;
+  animation: ani500 0.6s forwards;
+  background: radial-gradient(circle, #F66135 0.2em, transparent 0.3em) 6em 6em/1em 1em, radial-gradient(circle, #F66135 0.2em, transparent 0.3em) 0 0/1em 1em;
+}
+@keyframes ani500 {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
+}
+
+.button1 {
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #35F6A5;
+  border-right: 1px solid #35F6A5;
+  border-bottom: 3px solid #35F6A5;
+  border-left: 3px solid #35F6A5;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  border-color: #35F6A5;
+  color: white;
+}
+.button1:hover {
+  border-top: 1px solid #F66135;
+  border-right: 1px solid #F66135;
+  border-bottom: 3px solid #F66135;
+  border-left: 3px solid #F66135;
+  color: #fff;
+  transition-delay: 0.2s;
+  animation: ani500 0.6s forwards;
+  background: radial-gradient(circle, #F66135 0.2em, transparent 0.3em) 6em 6em/1em 1em, radial-gradient(circle, #F66135 0.2em, transparent 0.3em) 0 0/1em 1em;
+}
+@keyframes ani500 {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
+}
+
+.button2 {
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #F66135;
+  border-right: 1px solid #F66135;
+  border-bottom: 3px solid #F66135;
+  border-left: 3px solid #F66135;
+  border-radius: 40px;
+  background-color: #F66135;
+  text-align: center;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  border-color: #F66135;
+  color: white;
+}
+.button2:hover {
+  border-top: 1px solid #16A87A;
+  border-right: 1px solid #16A87A;
+  border-bottom: 3px solid #16A87A;
+  border-left: 3px solid #16A87A;
+  color: white;
+  transition-delay: 0.2s;
+  animation: ani500 0.6s forwards;
+  background: radial-gradient(circle, #16A87A 0.2em, transparent 0.3em) 6em 6em/1em 1em, radial-gradient(circle, #16A87A 0.2em, transparent 0.3em) 0 0/1em 1em;
+}
+@keyframes ani500 {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
+}
+
 @media (max-width: 1199px) {
   .f24 {
     font-size: 20px;
@@ -583,6 +683,22 @@ img {
   }
 }
 @media (max-width: 991px) {
+  .display1 {
+    font-size: 72px;
+    line-height: 120%;
+  }
+  .display2 {
+    font-size: 64px;
+    line-height: 120%;
+  }
+  .display3 {
+    font-size: 56px;
+    line-height: 120%;
+  }
+  .display4 {
+    font-size: 48px;
+    line-height: 120%;
+  }
   .fs-one,
   h1,
   h1 > a {
@@ -657,6 +773,15 @@ img {
   .padding-top-bottom {
     padding: 70px 0px;
   }
+  .button-header {
+    padding: 10px 20px;
+  }
+  .button1 {
+    padding: 10px 20px;
+  }
+  .button2 {
+    padding: 10px 20px;
+  }
 }
 @media (max-width: 767px) {
   .mt8 {
@@ -718,6 +843,22 @@ img {
   }
 }
 @media (max-width: 575px) {
+  .display1 {
+    font-size: 64px;
+    line-height: 120%;
+  }
+  .display2 {
+    font-size: 56px;
+    line-height: 120%;
+  }
+  .display3 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+  .display4 {
+    font-size: 40px;
+    line-height: 120%;
+  }
   .fs-one,
   h1,
   h1 > a {
@@ -775,6 +916,18 @@ img {
   .padding-top-bottom {
     padding: 50px 0px;
   }
+  .pd-hero-top {
+    padding-top: 60px;
+  }
+  .button-header {
+    padding: 8px 16px;
+  }
+  .button1 {
+    padding: 8px 16px;
+  }
+  .button2 {
+    padding: 8px 16px;
+  }
 }
 header {
   position: fixed;
@@ -830,7 +983,8 @@ header {
   position: relative;
 }
 .navbar__list-drop-menu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   flex-direction: column;
   gap: 1rem;
@@ -838,9 +992,16 @@ header {
   background-color: white;
   border-radius: 8px;
   z-index: 999;
+  pointer-events: none;
+  transition: all 0.6s ease-in-out;
+}
+.navbar__list-drop-menu li {
+  margin-bottom: 10px;
 }
 .navbar__list-drop-menu.open {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 .navbar__list-drop-menu.features {
   right: 0;
@@ -854,17 +1015,6 @@ header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-}
-.navbar__buttons a {
-  color: white;
-  background-color: #16A87A;
-  font-weight: 500;
-  transition: 0.3s ease;
-  padding: 16px 28px;
-  border-radius: 8px;
-}
-.navbar__buttons a:hover {
-  color: white;
 }
 .navbar .menu {
   display: none;
@@ -894,6 +1044,35 @@ header {
   transform: rotate(-90deg) translateX(5px);
 }
 
+.hero-area {
+  background-image: url("../images/hero-banner.png"), url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  background-position: center, bottom left;
+  position: relative;
+  background-color: white;
+}
+.hero-area .hero-svg {
+  fill: white;
+}
+
+.aboutus__right-top {
+  color: var(--text-green);
+  font-weight: 500;
+}
+.aboutus__right h2 {
+  font-weight: 600;
+}
+.aboutus__item-right img {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.aboutus__left-count {
+  background-color: var(--text-green);
+  top: 0;
+  right: 36%;
+}
+
 @media (max-width: 991px) {
   .navbar .logo-sm img {
     width: 80%;
@@ -903,6 +1082,7 @@ header {
     top: 100%;
     right: -100%;
     width: 280px;
+    min-height: calc(100vh - 78px);
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -920,11 +1100,18 @@ header {
     gap: 1rem;
   }
   .navbar__list-drop-menu {
+    display: none;
     position: inherit;
     background-color: transparent;
     box-shadow: none;
     padding: 0.5rem 1rem;
     gap: 0.5rem;
+  }
+  .navbar__list-drop-menu li {
+    margin-bottom: 5px !important;
+  }
+  .navbar__list-drop-menu.open {
+    display: flex;
   }
   .navbar__buttons {
     flex-direction: column;
@@ -943,8 +1130,14 @@ header {
   .navbar .menu {
     display: block;
   }
+  .left-popup a img {
+    width: 80%;
+  }
 }
 @media (max-width: 575px) {
+  .navbar {
+    padding: 15px 60px;
+  }
   .navbar .logo-sm img {
     width: 50%;
   }
