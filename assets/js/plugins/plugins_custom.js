@@ -67,16 +67,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Odometer Starts Here
     // Odometer
-    // $(".odometer").each(function () {
-    //   $(this).isInViewport(function (status) {
-    //     if (status === "entered") {
-    //       var section = $(this).closest(".counters");
-    //       section.find(".odometer").each(function () {
-    //         $(this).html($(this).attr("data-odometer-final"));
-    //       });
-    //     }
-    //   });
-    // });
+    $(".odometer").each(function () {
+      $(this).isInViewport(function (status) {
+        if (status === "entered") {
+          var section = $(this).closest(".counters");
+          section.find(".odometer").each(function () {
+            $(this).html($(this).attr("data-odometer-final"));
+          });
+        }
+      });
+    });
     // Odometer Ends Here
 
     // Typed js Starts Here

@@ -1,0 +1,9 @@
+@mixin box($value) {
+    width: $value;
+    min-width: $value;
+    height: $value;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

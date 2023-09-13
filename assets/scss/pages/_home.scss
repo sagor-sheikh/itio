@@ -7,6 +7,14 @@
     position: relative;
     background-color: white;
 
+    .left-popup {
+        a {
+            .play-btn {
+                animation: pulse-border 3s linear infinite;
+            }
+        }
+    }
+
     .hero-svg {
         fill: white;
     }
@@ -39,9 +47,208 @@
         &-count {
             background-color: var(--text-green);
             top: 0;
-            right: 36%;
+            right: 0%;
+
+            .count-number {
+                font-size: 80px;
+                color: var(--text-green);
+                text-shadow: -1px 1px 0 #fff,
+                    1px 1px 0 #fff,
+                    1px -1px 0 #fff,
+                    -1px -1px 0 #fff;
+
+                span {
+                    font-size: inherit;
+                    font-weight: inherit;
+                }
+            }
+
+        }
+    }
+
+    &__certified {
+        padding: 40px;
+
+        &-right {
+            img {
+                max-width: 100px;
+                min-width: 50px;
+            }
         }
     }
 }
 
 // About Section Style Ends
+// Service Section Style Starts
+.services {
+    &__heading {
+        &-top {
+            color: var(--text-green);
+        }
+    }
+
+    &__card {
+        border-radius: 6px;
+        border: 1px solid var(--st, #E9E9E9);
+        background: #FFF;
+        padding: 32px;
+        transition: 0.3s ease-in-out;
+        height: 100%;
+
+        &-right {
+            @include box(60px);
+            background-color: var(--text-orange);
+        }
+
+        &-left {
+            a {
+                color: var(--text-green);
+            }
+        }
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            background: #FFF7F5;
+            box-shadow: 0px 1px 3px 0px rgba(58, 58, 58, 0.05), 0px 1px 2px 0px rgba(58, 58, 58, 0.08);
+        }
+
+        &:hover &-left a {
+            color: var(--text-orange);
+        }
+
+        .web-icon {
+            background-color: #CE44FF;
+        }
+
+        .soft-icon {
+            background-color: var(--text-green);
+        }
+
+        .anal-icon {
+            background-color: #FFBB0B;
+        }
+
+        .cart-icon {
+            background-color: #0D8BFF;
+        }
+
+        .security-icon {
+            background-color: #7C41FB;
+        }
+    }
+}
+
+// Service Section Style Ends
+// Digital World Section Starts
+.dlwd {
+    background-color: #FFF7F5;
+}
+
+// Digital World Section Ends
+// Responsive Starts
+@media (max-width: 1799px) {
+    .dlwd {
+        &__left {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .dlwd {
+
+        padding: 120px 0;
+    }
+
+}
+
+@media (max-width: 1699px) {
+    .aboutus {
+        &__left {
+            &-count {
+                .count-number {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1499px) {}
+
+@media (max-width: 1399px) {
+    .aboutus {
+        &__certified {
+            padding: 20px;
+
+            &-right {
+                img {
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .aboutus {
+        &__left {
+            &-count {
+                .count-number {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    // Digital World Section
+    .dlwd {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+    // Digital World Section Start Here
+    .dlwd {
+        &__left {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // Digital World Section Ends Here
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+
+    // about section starts here
+    .aboutus {
+        &__certified {
+            padding: 10px;
+            text-align: center;
+
+            &-right {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+    // about section Ends here
+    // Digital World Section Starts
+    .dlwd {
+        padding: 50px 0;
+
+    }
+
+    // Digital World Section Ends
+}
+
+@media (max-width: 480px) {}

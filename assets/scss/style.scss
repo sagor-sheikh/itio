@@ -18,10 +18,11 @@
 @import "../css/plugins/slick.css";
 
 // odometer Plugins
-@import "../css/plugins/odometer-theme-car.css";
+@import "../css/plugins/odometer-min.css";
 
 // Scss Global
 @import "main/_global.scss";
+@import "main/_maxin.scss";
 
 // Wow plugins
 @import "../css/plugins/all.min.css";

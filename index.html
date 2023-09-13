@@ -77,7 +77,7 @@
     </header>
     <section class="pd-hero-top hero-area">
         <div class="container padding-top">
-            <div class="row">
+            <div class="row gape">
                 <div class="col-lg-7">
                     <div class="heroright">
                         <h1 class="display-2 fw7 text-white mb-3 mb-lg-4">
@@ -100,8 +100,10 @@
                 </div>
                 <div class="col-lg-5 d-center">
                     <div class="left-popup d-center">
-                        <a href="https://www.youtube.com/watch?v=9HaU8NjH7bI" class="video">
-                            <img src="assets/images/icon/player.png" alt="icon">
+                        <a href="https://www.youtube.com/watch?v=9HaU8NjH7bI" class="video position-relative">
+                            <img src="assets/images/icon/play.png" alt="icon">
+                            <div class="play-btn position-absolute">
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -111,10 +113,12 @@
             <img src="assets/images/hero-shape-svg.svg" alt="Shape">
         </div>
     </section>
-    <section class="aboutus padding-bottom">
-        <div class="container">
+    <section class="aboutus">
+        <div class="container-fluid ">
             <div class="row gape">
-                <div class="col-xl-6">
+                <div class="col-0 col-xxl-2">
+                </div>
+                <div class="col-lg-6 col-xxl-5 pe-1 pe-lg-5 ps-3">
                     <div class="aboutus__right">
                         <span class="aboutus__right-top mb-2 mb-md-3">About Us</span>
                         <h2 class="mb-3 mb-md-4">Preparing for your success <span>trusted source in IT services</span>
@@ -123,7 +127,7 @@
                             way
                             for your success. With a trusted track record, we ensure your journey to excellence is
                             seamless and supported.</p>
-                        <div class="aboutus__part d-flex  gap-3 gap-md-4">
+                        <div class="aboutus__part d-flex flex-wrap flex-sm-nowrap gap-3 gap-md-4">
                             <div class="aboutus__item d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3 gap-xxl-4">
                                 <div class="aboutus__item-right">
                                     <img src="assets/images/icon/about-icon1.png" alt="icon">
@@ -146,23 +150,268 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="d-inline-flex  button-header mt40">Get In Touch <span
+                        <a href="#" class="d-inline-flex gap-1 button-header mt40">Get In Touch <span
                                 class="material-symbols-outlined">
                                 trending_flat
                             </span></a>
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="aboutus__left">
+                <div class="col-lg-6 col-xxl-5">
+                    <div
+                        class="aboutus__left d-flex flex-wrap flex-sm-nowrap align-items-end justify-content-center gap-2 gap-lg-3 position-relative">
                         <div class="aboutus__left-one position-relative">
                             <img src="assets/images/about-3.png" alt="icon">
                             <div
-                                class="aboutus__left-count d-flex align-items-center position-absolute p-4 gap-3 gap-md-4">
-                                <span class="display-1 fw7 count-number">35</span>
+                                class="aboutus__left-count d-flex align-items-center position-absolute p-3 gap-3 gap-md-4 counters">
+                                <span class="fw7 count-number odometer" data-odometer-final="35">0</span>
                                 <span class="f24 fw5 text-white">Years <br> of experience</span>
                             </div>
                         </div>
-                        <div class="aboutus__left-two"></div>
+                        <div class="aboutus__left-two">
+                            <img class="" src="assets/images/about-4.png" alt="Icon">
+                        </div>
+                        <div
+                            class="aboutus__certified position-absolute end-0 bottom-0 bg-white d-flex flex-wrap flex-md-nowrap align-items-center justify-content-center gap-3 gap-md-4 w-75">
+                            <div class="aboutus__certified-right">
+                                <img src="assets/images/icon/certified.png" alt="icon">
+                            </div>
+                            <div class="aboutus__certified-left">
+                                <h4><span class="f24">Certified Company</span></h4>
+                                <p>We are a certified company, demonstrating our commitment to excellence, quality, and
+                                    industry-recognized standards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services padding-top padding-bottom">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-7 col-xxl-6">
+                    <div class="services__heading mb40">
+                        <span class="mb-2 mb-md-3 fw5 services__heading-top">We Provide the following services</span>
+                        <h2 class="mb-3 mb-md-4 fw6">Comprehensive Services <span class="d-inline">We Have in Store for
+                                You</span></h2>
+                        <p>Access 4,000+ timezone aligned software engineers with experience in 100+ technologies Access
+                            4,000+ timezone aligned </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gape">
+                <div class="col-md-6 col-xl-4">
+                    <div class="services__card d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3">
+                        <div class="services__card-right">
+                            <img src="assets/images/icon/it.png" alt="icon">
+                        </div>
+                        <div class="services__card-left">
+                            <h4 class="mb-1 mb-md-2">It Solution</h4>
+                            <p class="mb20">Exceptional service that exceeded my expectations! Their IT solutions
+                                streamlined our operations, boosting efficiency tenfold. </p>
+                            <a href="#" class="d-flex align-items-center gap-1">Discover Now <span
+                                    class="material-symbols-outlined">
+                                    trending_flat
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="services__card d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3">
+                        <div class="services__card-right web-icon">
+                            <img src="assets/images/icon/web.png" alt="icon">
+                        </div>
+                        <div class="services__card-left">
+                            <h4 class="mb-1 mb-md-2">Web Development</h4>
+                            <p class="mb20">Exceptional service that exceeded my expectations! Their IT solutions
+                                streamlined our operations, boosting efficiency tenfold. </p>
+                            <a href="#" class="d-flex align-items-center gap-1">Discover Now <span
+                                    class="material-symbols-outlined">
+                                    trending_flat
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="services__card d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3">
+                        <div class="services__card-right soft-icon">
+                            <img src="assets/images/icon/settings.png" alt="icon">
+                        </div>
+                        <div class="services__card-left">
+                            <h4 class="mb-1 mb-md-2">Software Solutions</h4>
+                            <p class="mb20">Exceptional service that exceeded my expectations! Their IT solutions
+                                streamlined our operations, boosting efficiency tenfold. </p>
+                            <a href="#" class="d-flex align-items-center gap-1">Discover Now <span
+                                    class="material-symbols-outlined">
+                                    trending_flat
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="services__card d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3">
+                        <div class="services__card-right anal-icon">
+                            <img src="assets/images/icon/anal.png" alt="icon">
+                        </div>
+                        <div class="services__card-left">
+                            <h4 class="mb-1 mb-md-2">Data Analytics</h4>
+                            <p class="mb20">Exceptional service that exceeded my expectations! Their IT solutions
+                                streamlined our operations, boosting efficiency tenfold. </p>
+                            <a href="#" class="d-flex align-items-center gap-1">Discover Now <span
+                                    class="material-symbols-outlined">
+                                    trending_flat
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="services__card d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3">
+                        <div class="services__card-right cart-icon">
+                            <img src="assets/images/icon/cart.png" alt="icon">
+                        </div>
+                        <div class="services__card-left">
+                            <h4 class="mb-1 mb-md-2">E-Commerce Solutions</h4>
+                            <p class="mb20">Exceptional service that exceeded my expectations! Their IT solutions
+                                streamlined our operations, boosting efficiency tenfold. </p>
+                            <a href="#" class="d-flex align-items-center gap-1">Discover Now <span
+                                    class="material-symbols-outlined">
+                                    trending_flat
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="services__card d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3">
+                        <div class="services__card-right security-icon">
+                            <img src="assets/images/icon/security.png" alt="icon">
+                        </div>
+                        <div class="services__card-left">
+                            <h4 class="mb-1 mb-md-2">E-Commerce Solutions</h4>
+                            <p class="mb20">Exceptional service that exceeded my expectations! Their IT solutions
+                                streamlined our operations, boosting efficiency tenfold. </p>
+                            <a href="#" class="d-flex align-items-center gap-1">Discover Now <span
+                                    class="material-symbols-outlined">
+                                    trending_flat
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dlwd">
+        <div class="container">
+            <div class="row gape align-items-center justify-content-between">
+                <div class="col-xl-6">
+                    <div class="aboutus__right dlwd__right">
+                        <h2 class="mb-2 mb-md-3">Unveiling Innovative <span class="d-inline">IT Solutions for a Digital
+                                World</span>
+                        </h2>
+                        <p class="aboutus__right-pragrap mb30">We proudly reveal innovative IT solutions tailored to the
+                            digital era. Our expertise shapes cutting-edge strategies, delivering transformative
+                            solutions that empower success in the dynamic digital landscape.</p>
+                        <div class="aboutus__part d-flex flex-wrap flex-sm-nowrap gap-3 gap-md-4 mb-3 mb-md-4">
+                            <div class="aboutus__item d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3 gap-xxl-4">
+                                <div class="aboutus__item-right">
+                                    <img src="assets/images/icon/field.png" alt="icon">
+                                </div>
+                                <div class="aboutus__item-left">
+                                    <h4 class="mb-1 mb-md-2">First On Field</h4>
+                                    <p>Our Trailblazing Journey into First On Field Technological Integration
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="aboutus__item d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3 gap-xxl-4">
+                                <div class="aboutus__item-right">
+                                    <img src="assets/images/icon/about-icon2.png" alt="icon">
+                                </div>
+                                <div class="aboutus__item-left">
+                                    <h4 class="mb-1 mb-md-2">Easy To Reach</h4>
+                                    <p>Effortlessly Connect with Us for Your IT Solution Requirements
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aboutus__part d-flex flex-wrap flex-sm-nowrap gap-3 gap-md-4">
+                            <div class="col-sm-6">
+                                <div class="aboutus__item d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3 gap-xxl-4">
+                                    <div class="aboutus__item-right">
+                                        <img src="assets/images/icon/worldwide.png" alt="icon">
+                                    </div>
+                                    <div class="aboutus__item-left">
+                                        <h4 class="mb-1 mb-md-2">Worldwide Services</h4>
+                                        <p>Empowering Enterprises Globally with Our IT Service Portfolio.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="aboutus__item d-flex flex-wrap flex-sm-nowrap gap-2 gap-md-3 gap-xxl-4">
+                                    <div class="aboutus__item-right">
+                                        <img src="assets/images/icon/24hours-service.png" alt="icon">
+                                    </div>
+                                    <div class="aboutus__item-left">
+                                        <h4 class="mb-1 mb-md-2">24/7 Support</h4>
+                                        <p>Nonstop IT Support Empowering Your Digital Ventures Anytime, Anyplace
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <a href="#" class="d-inline-flex gap-1 button-header mt40">Get In Touch <span
+                                class="material-symbols-outlined">
+                                trending_flat
+                            </span></a>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="dlwd__left">
+                        <img class="max-un" src="assets/images/code-image.png" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="workprocess padding-top padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center text-center mb40">
+                <div class="col-md-8 col-xl-7 col-xxl-6">
+                    <h2 class="fw6 mb-2 mb-md-3">Our <span class="d-inline">Working Process</span></h2>
+                    <p>Navigating Through Our Comprehensive 5-Phase Working Process for IT Solutions that Transcend
+                        Expectations.</p>
+                </div>
+            </div>
+            <div class="row gape justify-content-center text-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="workprocess-card">
+                        <img class="mb-3 mb-md-4" src="assets/images/icon/work1.png" alt="Icon">
+                        <h4 class="mb-2">Select A Project</h4>
+                        <p>Choose your venture and embark on a journey of innovation with our tailored IT solutions</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="workprocess-card">
+                        <img class="mb-3 mb-md-4" src="assets/images/icon/work2.png" alt="Icon">
+                        <h4 class="mb-2">Consulting Services</h4>
+                        <p>Choose your venture and embark on a journey of innovation with our tailored IT solutions</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="workprocess-card">
+                        <img class="mb-3 mb-md-4" src="assets/images/icon/work3.png" alt="Icon">
+                        <h4 class="mb-2">Project Analysis</h4>
+                        <p>Choose your venture and embark on a journey of innovation with our tailored IT solutions</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="workprocess-card">
+                        <img class="mb-3 mb-md-4" src="assets/images/icon/work4.png" alt="Icon">
+                        <h4 class="mb-2">Deliver Result</h4>
+                        <p>Choose your venture and embark on a journey of innovation with our tailored IT solutions</p>
                     </div>
                 </div>
             </div>
