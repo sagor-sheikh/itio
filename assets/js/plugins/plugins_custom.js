@@ -6,36 +6,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Hero Section button click to popup play video jquery plugin code.
     $('.video').magnificPopup({
-      type: 'iframe'
+      type: 'iframe',
     });
+
+
+    
+    $('.gallery').each(function() { // the containers for all your galleries
+      $(this).magnificPopup({
+          delegate: 'a', // the selector for gallery item
+          type: 'image',
+          gallery: {
+            enabled:true
+          }
+      });
+  });
 
 
 
 
     // Feedback Section Slick slider
-    // $("card_slider").slick({
-    //   centerMode: true,
-    //   centerPadding: "",
-    //   slidesToShow: 3,
-    //   slidesToScroll: 1,
-    //   autoplay: true,
-    //   arrows: true,
-    //   // nextArrow: '<span class="right-arrow slider-arrow"><i class="fa-solid fa-arrow-right"></i></span>',
-    //   // prevArrow: '<span class="left-arrow slider-arrow"><i class="fa-solid fa-arrow-left"></i></span>',
-    //   responsive: [
-    //     {
-    //       breakpoint: 1199,
-    //       settings: {
-    //         centerMode: true,
-    //         centerPadding: "",
-    //         slidesToShow: 1,
-    //         arrows: false,
-    //         autoplay: true,
-    //         autoplaySpeed: 2000,
-    //       },
-    //     },
-    //   ],
-    // });
+    $(".testimonial__slider").slick({
+      centerMode: true,
+      centerPadding: "",
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      // nextArrow: '<span class="right-arrow slider-arrow"><i class="fa-solid fa-arrow-right"></i></span>',
+      // prevArrow: '<span class="left-arrow slider-arrow"><i class="fa-solid fa-arrow-left"></i></span>',
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            centerMode: true,
+            centerPadding: "",
+            slidesToShow: 2,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            centerMode: true,
+            centerPadding: "",
+            slidesToShow: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          },
+        },
+      ],
+    });
 
     // $(".card_slider").slick({
     //   centerMode: true,
