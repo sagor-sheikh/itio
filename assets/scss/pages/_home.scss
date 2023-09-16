@@ -19,7 +19,6 @@
         fill: white;
     }
 }
-
 // Banner Section Style Ends
 // About Section Style Starts
 .aboutus {
@@ -77,7 +76,6 @@
         }
     }
 }
-
 // About Section Style Ends
 // Service Section Style Starts
 .services {
@@ -137,13 +135,11 @@
         }
     }
 }
-
 // Service Section Style Ends
 // Digital World Section Starts
 .dlwd {
     background-color: #FFF7F5;
 }
-
 // Digital World Section Ends
 // Call to Action Section Starts
 .calltoaction {
@@ -168,7 +164,6 @@
         }
     }
 }
-
 // Call to Action Section Ends
 // Counter Section Starts
 .counter {
@@ -218,17 +213,18 @@
         margin-right: -10px;
     }
 }
-
 // Counter Section Ends
 // Testimonial Section Starts
 .testimonial {
-    &__heading{
-        &-top{
+    &__heading {
+        &-top {
             color: var(--text-green);
         }
     }
+
     &__slider {
         margin: -12px 0;
+
         .slick-slide {
             padding: 12px 12px;
         }
@@ -237,12 +233,14 @@
     &__item {
         padding: 32px 24px 40px 24px;
         border: 1px solid #E9E9E9;
-        background:  #FFF;
+        background: #FFF;
         transition: 0.3s linear;
+
         &:hover {
             border: 1px solid #F66135;
             box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.25) !important;
         }
+
         &-thumb {
             img {
                 @include box(94px);
@@ -269,19 +267,23 @@
 }
 // Testimonial Section Ends
 // Gallery Section Starts
-.gallery{
+.gallery {
     background: #F8F7F6;
-    &__heading{
-        &-top{
+
+    &__heading {
+        &-top {
             color: var(--text-green);
         }
     }
-    &__item{
+
+    &__item {
         position: relative;
-        img{
+
+        img {
             width: 100%;
         }
-        &-number{
+
+        &-number {
             height: 37px;
             width: 56px;
             background: #fff;
@@ -294,6 +296,82 @@
     }
 }
 // Gallery Section Ends
+// Team Members Section Starts
+.members {
+    &__heading {
+        &-top {
+            color: var(--text-green);
+        }
+    }
+
+    &__item {
+        &-name {
+            color: var(--text-black);
+        }
+
+        &-position {
+            color: var(--text-green);
+        }
+    }
+}
+// Team Members Section Ends
+// Our Blog section starts
+.ourblog {
+    background: #F8F7F6;
+
+    &__item {
+        background: var(--primary-white, #FFF);
+        box-shadow: 0px 4px 6px 0px rgba(58, 58, 58, 0.06), 0px 2px 4px 0px rgba(58, 58, 58, 0.08);
+        height: 100%;
+        &-thumb{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    &__heading {
+        &-top {
+            color: var(--text-green);
+        }
+    }
+
+    &__datetime {
+        width: 122px;
+        height: 37px;
+        padding: 8px 20px;
+        background: #fff;
+        border-radius: 30px;
+        text-align: center;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        &-date {
+            color: var(--text-black);
+        }
+    }
+
+    &__textcontent {
+        padding: 20px;
+    }
+
+    &__icon {
+        cursor: pointer;
+        img {
+            height: 16px;
+            width: 16px;
+        }
+
+        span {
+            color: var(--text-black);
+        }
+    }
+
+    &__read {
+        color: var(--text-green);
+    }
+}
+// Our Blog section ends
 // Responsive Starts
 @media (max-width: 1799px) {
     .dlwd {
@@ -447,27 +525,31 @@
 }
 
 @media (max-width: 480px) {
+
     // Testimonial Section Starts
-.testimonial {
-    &__slider {
-        margin: -12px 0;
-        .slick-slide {
-            padding: 12px 12px;
-        }
-    }
-    &__item {
-        padding: 16px 12px 20px 12px;
-        border: 1px solid #E9E9E9;
-        background:  #FFF;
-        transition: 0.3s linear;
-        &-thumb {
-            img {
-                @include box(60px);
+    .testimonial {
+        &__slider {
+            margin: -12px 0;
+
+            .slick-slide {
+                padding: 12px 12px;
             }
         }
 
-    }
-}
+        &__item {
+            padding: 16px 12px 20px 12px;
+            border: 1px solid #E9E9E9;
+            background: #FFF;
+            transition: 0.3s linear;
 
-// Testimonial Section Ends
+            &-thumb {
+                img {
+                    @include box(60px);
+                }
+            }
+
+        }
+    }
+
+    // Testimonial Section Ends
 }

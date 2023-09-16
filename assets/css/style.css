@@ -1129,6 +1129,31 @@ header {
   transform: rotate(-90deg) translateX(5px);
 }
 
+.footer .single-area {
+  margin-left: 32px;
+}
+.footer__iconbox a {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__iconbox .insta {
+  background-color: #C7981F;
+}
+.footer__iconbox .facebook {
+  background-color: #4084C3;
+}
+.footer__iconbox .print {
+  background-color: #EC3E3E;
+}
+.footer__iconbox .linkdin {
+  background-color: #4084C3;
+}
+
 .hero-area {
   background-image: url("../images/hero-banner.png"), url("../images/logo.png");
   background-repeat: no-repeat;
@@ -1342,6 +1367,61 @@ header {
   left: 10px;
 }
 
+.members__heading-top {
+  color: var(--text-green);
+}
+.members__item-name {
+  color: var(--text-black);
+}
+.members__item-position {
+  color: var(--text-green);
+}
+
+.ourblog {
+  background: #F8F7F6;
+}
+.ourblog__item {
+  background: var(--primary-white, #FFF);
+  box-shadow: 0px 4px 6px 0px rgba(58, 58, 58, 0.06), 0px 2px 4px 0px rgba(58, 58, 58, 0.08);
+  height: 100%;
+}
+.ourblog__item-thumb img {
+  width: 100%;
+}
+.ourblog__heading-top {
+  color: var(--text-green);
+}
+.ourblog__datetime {
+  width: 122px;
+  height: 37px;
+  padding: 8px 20px;
+  background: #fff;
+  border-radius: 30px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.ourblog__datetime-date {
+  color: var(--text-black);
+}
+.ourblog__textcontent {
+  padding: 20px;
+}
+.ourblog__icon {
+  cursor: pointer;
+}
+.ourblog__icon img {
+  height: 16px;
+  width: 16px;
+}
+.ourblog__icon span {
+  color: var(--text-black);
+}
+.ourblog__read {
+  color: var(--text-green);
+}
+
 @media (max-width: 1799px) {
   .dlwd__left img {
     width: 100%;
@@ -1487,6 +1567,12 @@ header {
   .left-popup a img {
     width: 80%;
   }
+  .footer .single-area {
+    margin-left: 0;
+  }
+  .footer__logo img {
+    width: 100px;
+  }
 }
 @media (max-width: 575px) {
   .navbar {
@@ -1494,5 +1580,8 @@ header {
   }
   .navbar .logo-sm img {
     width: 50%;
+  }
+  .footer__logo img {
+    width: 90px;
   }
 }/*# sourceMappingURL=style.css.map */

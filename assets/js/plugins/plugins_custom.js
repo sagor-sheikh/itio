@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesToScroll: 1,
       autoplay: true,
       arrows: true,
+      autoplaySpeed: 1500,
       // nextArrow: '<span class="right-arrow slider-arrow"><i class="fa-solid fa-arrow-right"></i></span>',
       // prevArrow: '<span class="left-arrow slider-arrow"><i class="fa-solid fa-arrow-left"></i></span>',
       responsive: [
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slidesToShow: 2,
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 1500,
           },
         },
         {
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slidesToShow: 1,
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 1500,
           },
         },
       ],
