@@ -1,0 +1,154 @@
+// Hero Section Starts
+.about-heroarea {
+    background-image: url("../images/about-us-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heroarea {
+    padding: 174px 0 142px 0;
+
+    &__backhome {
+
+        a,
+        span {
+            color: rgb(255, 255, 255, 0.8);
+        }
+    }
+}
+// Hero Section Ends
+// Experiences section Starts
+.experience {
+    &__thumb {
+        img {
+            animation: previewShapeY 3s linear infinite;
+        }
+    }
+
+    &__decs {
+        &-top {
+            color: var(--text-green);
+        }
+    }
+
+    &__item {
+        .select-icon {
+            @include box(20px);
+            background-color: #16A87A;
+
+            span {
+                color: white;
+            }
+        }
+
+        span {
+            color: rgb(43, 34, 32, 0.78);
+        }
+    }
+}
+// Experiences section Ends
+// Our Team Expert Section Starts
+.teamexpert {
+    background: #FBFAF9;
+    &__heading{
+        &-top{
+            color: var(--text-green);
+        }
+    }
+    &__card {
+        height: 100%;
+        padding: 16px 16px 36px 16px;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0px 4px 6px 0px rgba(58, 58, 58, 0.06), 0px 2px 4px 0px rgba(58, 58, 58, 0.08);
+    }
+    &__thumb{
+        img{
+            width: 100%;
+        }
+    }
+    &__cbody{
+        &-name{
+            color: var(--text-black);
+        }
+        &-position{
+            color: #16A87A;
+        }
+    }
+    &__social{
+        a{
+            @include box(32px);
+            
+            i{
+                padding: 6px 5.5px 6px 6.5px;
+                color: white;
+            }
+        }
+        .facebook{
+            background: #4084C3;
+        }
+        .pinterest{
+            background: #EC3E3E;
+        }
+    }
+}
+// Our Team Expert Section Ends
+// Responsive Starts
+@media (max-width: 1799px) {}
+
+@media (max-width: 1699px) {}
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1499px) {}
+
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+
+    // Hero Section Starts
+    .heroarea {
+        padding: 120px 0 80px 0;
+    }
+
+    // Hero section Ends
+    // Experiences section Starts
+    .experience {
+        &__item {
+            .select-icon {
+                @include box(16px);
+            }
+
+            span {
+                color: rgb(43, 34, 32, 0.78);
+            }
+        }
+    }
+
+    // Experiences section Ends
+    // Our Team Expert Section Starts
+    .teamexpert{
+        &__social{
+            a{
+                @include box(28px);
+            }
+        }
+    }
+    // Our Team Expert Section Ends
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+
+    // Hero Section Starts
+    .heroarea {
+        padding: 70px 0 50px 0;
+    }
+
+    // Hero section Ends
+}
+
+@media (max-width: 480px) {}
