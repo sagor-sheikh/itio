@@ -110,11 +110,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Preloader
 
     // Preloader Starts
-    // $(".preloader").delay(300).animate({
-    //   "opacity": "0"
-    // }, 800, function () {
-    //   $(".preloader").css("display", "none");
-    // });
+    $(".preloader").delay(300).animate({
+      "opacity": "0"
+    }, 1000, function () {
+      $(".preloader").css("display", "none");
+    });
     // Preloader Ends
 
     new WOW().init();

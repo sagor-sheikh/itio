@@ -468,7 +468,7 @@ img {
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  color: #0084FF;
+  color: #F66135;
   position: relative;
 }
 
@@ -487,7 +487,7 @@ img {
 }
 
 .loader:after {
-  color: #3FDD78;
+  color: #16A87A;
   transform: rotateY(70deg);
   animation-delay: .4s;
 }
@@ -907,7 +907,7 @@ img {
 
   .play-btn {
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -938,19 +938,10 @@ img {
         height: 40px;
       }
     }
-  //   &:after {
-  //     content: "";
-  //     position: absolute;
-  //     left: 50%;
-  //     top: 50%;
-  //     transform: translate(-50%, -50%);
-  //     width: 50px;
-  //     height: 50px;
-  //     background: var(--n3);
-  //     border-radius: 50%;
-  //     animation: pulse-border 1500ms ease-out infinite;
-  //     z-index: -1;
-  // }
+  }
+  .play-btn2 {
+    top: 50%;
+    left: 40% !important;
   }
 }
 
