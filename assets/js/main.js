@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
       $('html, body').animate({scrollTop:0}, '300');
     });
     // Pages TopUp Ends
+    // Progress Bar Starts
+    
+    // Progress Bar Ends
 
     // Profile
     // $(".user_chat").on("click", function () {

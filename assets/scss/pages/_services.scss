@@ -1,0 +1,264 @@
+// Our Benefits Starts Here
+.ourbenefits {
+    .ourbenefits__right {
+        &-top {
+            color: var(--text-green);
+        }
+    }
+
+    &__left {
+        padding: 32px 24px;
+        background: #FEEFEB;
+    }
+
+    &__itemone {
+        &-number {
+            color: var(--text-black);
+        }
+
+        &-head {
+            color: var(--text-orange);
+        }
+
+        p {
+            padding-right: 10px;
+        }
+    }
+
+    &__itemtwo {
+        &-support {
+            color: var(--text-orange);
+        }
+    }
+
+    &__memberimg {
+        img {
+            @include box(50px);
+            margin-left: -16px;
+        }
+    }
+
+    &__bright {
+        padding: 32px 24px;
+        background: #2B2220;
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: rgb(255, 255, 255, 0.8);
+        }
+    }
+
+    &__bleft {
+        height: 100%;
+        background: #EDFDF8;
+        padding: 32px 24px;
+
+        &-number {
+            color: var(--text-black);
+        }
+
+        &-head {
+            color: var(--text-green);
+        }
+    }
+
+    &__star {
+        &-icon {
+            i {
+                color: #16A87A;
+            }
+        }
+    }
+}
+
+// Our Benefits Ends Here
+// Our Certified Expert Starts
+.certified {
+    background: #111;
+    &__heading {
+        &-top {
+            color: var(--text-green);
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: rgb(255, 255, 255, 0.8);
+        }
+    }
+
+    &__item {
+        padding: 32px 24px;
+        background: #212121;
+        box-shadow: 0px 4px 6px 0px rgba(58, 58, 58, 0.06), 0px 2px 4px 0px rgba(58, 58, 58, 0.08);
+
+        &-number {
+            color: rgb(255, 255, 255, 0.24);
+            transition: 0.3s linear;
+        }
+
+        &-pos {
+            color: white;
+            transition: 0.3s linear;
+        }
+
+        p {
+            color: rgb(255, 255, 255, 0.8);
+        }
+
+        a {
+            color: #46E7B4;
+            transition: 0.3s linear;
+        }
+
+        &:hover &-number {
+            color: #F7724A;
+            transition: 0.3s linear;
+        }
+
+        &:hover &-pos {
+            color: #F7724A;
+            transition: 0.3s linear;
+        }
+
+        &:hover a {
+            color: #F7724A;
+            transition: 0.3s linear;
+        }
+    }
+
+    &__pagination {
+        nav {
+            ul {
+                li {
+                    a {
+                        background-color: transparent;
+                        color: white;
+                        border-radius: 4px;
+                        border: 1px solid #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+// Our Certified Expert Ends
+// Skill set starts
+.skillset {
+    background: #FBFAF9;
+
+    &__decs{
+        &-top {
+            color: var(--text-green);
+        }
+    }
+    &__progress{
+        &-item{
+            .progress{
+                height: 1px;
+                background-color: #B3B3B3;
+                .progress-bar{
+                    background-color: var(--text-black);
+                }  
+            }
+            .size-setup{
+                height: 5px;
+                width: 2px;
+                background-color: black;
+                z-index: 999;
+                right: 20%;
+                top: 94%;
+            }
+            span{
+                color: var(--text-black);
+            }
+        }
+    }
+}
+// Skill set Ends
+// MAKE REQUEST Starts
+.request{
+    padding: 36px 0;
+    background-color: #2B2220;
+    &__left{
+        a{
+            border-radius: 8px;
+        }
+    }
+}
+// MAKE REQUEST Ends
+// Responsive Area
+@media (max-width: 767px) {
+// Skill set starts
+.skillset {
+    &__progress{
+        &-item{
+            .size-setup{
+                right: 20%;
+                top: 89%;
+            }
+        }
+    }
+}
+// Skill set Ends
+}
+@media (max-width: 575px) {
+
+    // Our Benefits Starts Here
+    .ourbenefits {
+        &__left {
+            padding: 20px 12px;
+        }
+
+        &__itemone {
+            p {
+                padding-right: 0px;
+            }
+        }
+
+        &__memberimg {
+            img {
+                @include box(40px);
+                margin-left: -12px;
+            }
+        }
+
+        &__bright {
+            padding: 20px 12px;
+
+            &-round {
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        &__bleft {
+            padding: 20px 12px;
+        }
+
+        &__star {
+            &-icon {
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // Our Benefits Ends Here
+    // Our Certified Expert Starts
+    .certified {
+        &__item {
+            padding: 20px 12px;
+        }
+    }
+
+    // Our Certified Expert Ends
+}
+@media (max-width: 480px) {}

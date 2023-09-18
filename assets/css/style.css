@@ -712,6 +712,28 @@ img {
   }
 }
 
+.button3 {
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F66135;
+  text-align: center;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  color: white;
+}
+.button3:hover {
+  color: white;
+  transition-delay: 0.2s;
+  animation: ani500 0.6s forwards;
+  background: radial-gradient(circle, #16A87A 0.2em, transparent 0.3em) 6em 6em/1em 1em, radial-gradient(circle, #16A87A 0.2em, transparent 0.3em) 0 0/1em 1em;
+}
+@keyframes ani500 {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
+}
+
 .play-btn {
   top: 50%;
   left: 50%;
@@ -864,6 +886,9 @@ img {
     padding: 10px 20px;
   }
   .button2 {
+    padding: 10px 20px;
+  }
+  .button3 {
     padding: 10px 20px;
   }
   .play-btn {
@@ -1065,6 +1090,9 @@ img {
     padding: 8px 16px;
   }
   .button2 {
+    padding: 8px 16px;
+  }
+  .button3 {
     padding: 8px 16px;
   }
 }
@@ -1562,7 +1590,7 @@ header {
   }
 }
 .about-heroarea {
-  background-image: url("../images/about-us-hero.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(267deg, rgba(0, 0, 0, 0.8) 3.86%, rgba(0, 0, 0, 0.8) 92.61%), url("../images/bg-for-innder.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1670,6 +1698,183 @@ header {
 @media (max-width: 575px) {
   .heroarea {
     padding: 70px 0 50px 0;
+  }
+}
+.ourbenefits .ourbenefits__right-top {
+  color: var(--text-green);
+}
+.ourbenefits__left {
+  padding: 32px 24px;
+  background: #FEEFEB;
+}
+.ourbenefits__itemone-number {
+  color: var(--text-black);
+}
+.ourbenefits__itemone-head {
+  color: var(--text-orange);
+}
+.ourbenefits__itemone p {
+  padding-right: 10px;
+}
+.ourbenefits__itemtwo-support {
+  color: var(--text-orange);
+}
+.ourbenefits__memberimg img {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -16px;
+}
+.ourbenefits__bright {
+  padding: 32px 24px;
+  background: #2B2220;
+}
+.ourbenefits__bright h2 {
+  color: white;
+}
+.ourbenefits__bright p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.ourbenefits__bleft {
+  height: 100%;
+  background: #EDFDF8;
+  padding: 32px 24px;
+}
+.ourbenefits__bleft-number {
+  color: var(--text-black);
+}
+.ourbenefits__bleft-head {
+  color: var(--text-green);
+}
+.ourbenefits__star-icon i {
+  color: #16A87A;
+}
+
+.certified {
+  background: #111;
+}
+.certified__heading-top {
+  color: var(--text-green);
+}
+.certified__heading h2 {
+  color: white;
+}
+.certified__heading p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.certified__item {
+  padding: 32px 24px;
+  background: #212121;
+  box-shadow: 0px 4px 6px 0px rgba(58, 58, 58, 0.06), 0px 2px 4px 0px rgba(58, 58, 58, 0.08);
+}
+.certified__item-number {
+  color: rgba(255, 255, 255, 0.24);
+  transition: 0.3s linear;
+}
+.certified__item-pos {
+  color: white;
+  transition: 0.3s linear;
+}
+.certified__item p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.certified__item a {
+  color: #46E7B4;
+  transition: 0.3s linear;
+}
+.certified__item:hover .certified__item-number {
+  color: #F7724A;
+  transition: 0.3s linear;
+}
+.certified__item:hover .certified__item-pos {
+  color: #F7724A;
+  transition: 0.3s linear;
+}
+.certified__item:hover a {
+  color: #F7724A;
+  transition: 0.3s linear;
+}
+.certified__pagination nav ul li a {
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+}
+
+.skillset {
+  background: #FBFAF9;
+}
+.skillset__decs-top {
+  color: var(--text-green);
+}
+.skillset__progress-item .progress {
+  height: 1px;
+  background-color: #B3B3B3;
+}
+.skillset__progress-item .progress .progress-bar {
+  background-color: var(--text-black);
+}
+.skillset__progress-item .size-setup {
+  height: 5px;
+  width: 2px;
+  background-color: black;
+  z-index: 999;
+  right: 20%;
+  top: 94%;
+}
+.skillset__progress-item span {
+  color: var(--text-black);
+}
+
+.request {
+  padding: 36px 0;
+  background-color: #2B2220;
+}
+.request__left a {
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .skillset__progress-item .size-setup {
+    right: 20%;
+    top: 89%;
+  }
+}
+@media (max-width: 575px) {
+  .ourbenefits__left {
+    padding: 20px 12px;
+  }
+  .ourbenefits__itemone p {
+    padding-right: 0px;
+  }
+  .ourbenefits__memberimg img {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -12px;
+  }
+  .ourbenefits__bright {
+    padding: 20px 12px;
+  }
+  .ourbenefits__bright-round img {
+    width: 50%;
+  }
+  .ourbenefits__bleft {
+    padding: 20px 12px;
+  }
+  .ourbenefits__star-icon i {
+    font-size: 14px;
+  }
+  .certified__item {
+    padding: 20px 12px;
   }
 }
 @media (max-width: 991px) {
