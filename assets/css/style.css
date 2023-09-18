@@ -1877,6 +1877,24 @@ header {
     padding: 20px 12px;
   }
 }
+.details__select-item .icon-select {
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-green);
+  padding: 5px;
+}
+.details__select-item .icon-select span {
+  color: white;
+}
+.details__select-item .select-title {
+  color: var(--text-black);
+}
+
 @media (max-width: 991px) {
   .navbar .logo-sm img {
     width: 80%;
