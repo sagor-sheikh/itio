@@ -1,0 +1,63 @@
+.blog {
+    &__right {
+        &-top {
+            border-bottom: 1px solid var(--text-black);
+        }
+    }
+
+    &__search {
+        .form-outline {
+            // width: 80%;
+        }
+        .form-outline{
+            width: 88%;
+        }
+        .form-control {
+            padding: 16px;
+            border-radius: 0;
+            border-top: 1px solid #E9E9E9;
+            border-bottom: 1px solid #E9E9E9;
+            border-left: 1px solid #E9E9E9;
+
+            &:focus {
+                color: var(--text-black);
+                background-color: var(--bs-body-bg);
+                border-color: #E9E9E9;
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        button {
+            border: none;
+            border-radius: 0;
+            background-color: var(--text-orange);
+            &:hover{
+                background-color: var(--text-orange);
+            }
+        }
+
+    }
+}
+
+
+// Responsive styles
+@media (max-width: 1799px) {}
+
+@media (max-width: 1699px) {}
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1499px) {}
+
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 480px) {}

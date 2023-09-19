@@ -103,9 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //   });
     // });
 
-    //   $(".slide-toggle").on("click", function () {
-    //     $(".box").toggleClass("show");
-    //   });
+      $(".slide-toggle").on("click", function () {
+        $(".box").toggleClass("show");
+      });
 
     //--clickable menu--
     //   $(".left-nav-icon").on("click", function () {

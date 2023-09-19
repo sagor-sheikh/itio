@@ -1894,6 +1894,105 @@ header {
 .details__select-item .select-title {
   color: var(--text-black);
 }
+.details__list span {
+  color: var(--text-green);
+}
+.details__extra span {
+  width: 75px;
+  height: 3px;
+  border-radius: 0px 0px 3px 3px;
+  background: #16A87A;
+}
+.details__listn span {
+  color: var(--text-black);
+}
+.details__rightpart {
+  overflow-y: auto;
+  position: sticky !important;
+  overflow-x: hidden;
+  max-height: 90vh;
+  top: 120px;
+}
+
+@media (max-width: 1199px) {
+  .details__extra span {
+    width: 60px;
+    height: 3px;
+  }
+}
+@media (max-width: 991px) {
+  .details {
+    overflow: hidden;
+  }
+  .details__extra span {
+    width: 50px;
+    height: 3px;
+  }
+  .details__rightpart {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    overflow: initial;
+  }
+  .details__left {
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: white;
+    position: absolute;
+    overflow-x: hidden;
+    padding: 10px;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.5s;
+    padding-bottom: 50px;
+    width: 300px;
+    max-height: 60vh;
+    z-index: 999 !important;
+    opacity: 0;
+  }
+  .details__left.show {
+    transform: translateX(0%);
+    transition: 0.5s;
+    opacity: 1;
+  }
+  .details__hide {
+    top: 190px;
+    z-index: 999;
+    top: 0;
+  }
+  .details__hide .none_two {
+    padding: 8px 15px !important;
+  }
+}
+.blog__right-top {
+  border-bottom: 1px solid var(--text-black);
+}
+.blog__search .form-outline {
+  width: 88%;
+}
+.blog__search .form-control {
+  padding: 16px;
+  border-radius: 0;
+  border-top: 1px solid #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+  border-left: 1px solid #E9E9E9;
+}
+.blog__search .form-control:focus {
+  color: var(--text-black);
+  background-color: var(--bs-body-bg);
+  border-color: #E9E9E9;
+  outline: 0;
+  box-shadow: none;
+}
+.blog__search button {
+  border: none;
+  border-radius: 0;
+  background-color: var(--text-orange);
+}
+.blog__search button:hover {
+  background-color: var(--text-orange);
+}
 
 @media (max-width: 991px) {
   .navbar .logo-sm img {
