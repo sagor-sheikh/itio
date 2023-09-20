@@ -19,7 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -643,6 +643,9 @@ img {
 .pd-hero-top {
   padding-top: 96px;
 }
+.pd60{
+  padding: 60px 110px;
+}
 
 // Responsive Starts
 // Button Styles
@@ -961,6 +964,10 @@ img {
   .padding-top-bottom {
     padding: 70px 0px;
   }
+  .pd60{
+    padding: 40px 60px;
+  }
+
   .button-header{
     padding: 10px 20px;
   }
@@ -1211,6 +1218,9 @@ img {
 
   .pd-hero-top {
     padding-top: 60px;
+  }
+  .pd60{
+    padding: 30px 20px;
   }
   .button-header{
     padding: 8px 16px;

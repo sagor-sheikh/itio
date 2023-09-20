@@ -1,0 +1,131 @@
+.blogdetails {
+    &__id {
+        border-top: 1px solid #E9E9E9;
+        border-bottom: 1px solid #E9E9E9;
+    }
+
+    &__daniel {
+        background: #EDFDF8;
+
+        h3 {
+            color: var(--text-green);
+        }
+    }
+
+    &__previous {
+        border-top: 1px solid #E9E9E9;
+        border-bottom: 1px solid #E9E9E9;
+
+        &-middle {
+            cursor: pointer;
+        }
+    }
+
+    &__icons {
+        &-item {}
+    }
+
+    &__slider {
+        &-thumb {
+            img {
+                @include box(120px)
+            }
+        }
+    }
+
+    &__comment {
+        .gap-style {
+            margin-left: 110px;
+        }
+    }
+
+    &__dcontent {
+        button {
+            padding: 12px 24px;
+            background-color: transparent;
+            border-radius: 8px;
+            border: 1px solid #6E7486;
+        }
+    }
+
+    &__cprofile {
+        &-thumb {
+            img {
+                @include box(100px)
+            }
+        }
+    }
+
+    &__replyfrom {
+        padding: 40px;
+        background: #F5F5F5;
+        form {
+            div {
+
+                input,
+                textarea {
+                    padding: 20px 16px;
+                    border: none;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    &::placeholder{
+                        color: #6E7486;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive styles
+@media (max-width: 1799px) {}
+
+@media (max-width: 1699px) {}
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1499px) {}
+
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .blogdetails {
+        &__comment {
+            .gap-style {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blogdetails {
+        &__replyfrom {
+            padding: 20px;
+            form {
+                div {
+                    input,
+                    textarea {
+                        padding: 15px 10px;
+                        border: none;
+                        &:focus {
+                            box-shadow: none;
+                        }
+                        &::placeholder{
+                            font-size: 14px;
+                            color: #6E7486;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 480px) {}

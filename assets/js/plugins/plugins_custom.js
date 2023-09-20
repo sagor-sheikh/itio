@@ -2,14 +2,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   $(function ($) {
 
-
-
     // Hero Section button click to popup play video jquery plugin code.
     $('.video').magnificPopup({
       type: 'iframe',
     });
-
-
 
     $('.gallery').each(function () { // the containers for all your galleries
       $(this).magnificPopup({
@@ -21,44 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-
-
-
     // Feedback Section Slick slider
-    $(".testimonial__slider").slick({
+    $(".blogdetails__slider").slick({
       centerMode: true,
       centerPadding: "",
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       arrows: true,
       autoplaySpeed: 1500,
-      // nextArrow: '<span class="right-arrow slider-arrow"><i class="fa-solid fa-arrow-right"></i></span>',
-      // prevArrow: '<span class="left-arrow slider-arrow"><i class="fa-solid fa-arrow-left"></i></span>',
-      responsive: [
-        {
-          breakpoint: 1199,
-          settings: {
-            centerMode: true,
-            centerPadding: "",
-            slidesToShow: 2,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 1500,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            centerMode: true,
-            centerPadding: "",
-            slidesToShow: 1,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 1500,
-          },
-        },
-      ],
     });
 
     // $(".card_slider").slick({
