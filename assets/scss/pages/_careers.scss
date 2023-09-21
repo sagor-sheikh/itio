@@ -90,6 +90,7 @@
         }
     }
 }
+
 // Co-Founder Section Ends
 // Responsive styles
 @media (max-width: 1799px) {}
@@ -105,22 +106,25 @@
 @media (max-width: 1199px) {}
 
 @media (max-width: 991px) {
+
     // Co-Founder Section Starts
-.cofunder {
+    .cofunder {
 
 
-    &__decs {
-        padding: 0 0;
+        &__decs {
+            padding: 0 0;
+        }
     }
-}
-// Co-Founder Section Ends
+
+    // Co-Founder Section Ends
 }
 
 @media (max-width: 767px) {}
 
 @media (max-width: 575px) {
-// Culture Sections Starts
-.culture {
+
+    // Culture Sections Starts
+    .culture {
         &__two {
             padding: 50px 0;
         }
@@ -128,10 +132,11 @@
         &__four {
             padding: 50px 0;
         }
-}
-// Culture Sections Ends
-// Benefits Section Starts
-.benefits {
+    }
+
+    // Culture Sections Ends
+    // Benefits Section Starts
+    .benefits {
         &__item {
             &-icon {
                 img {
@@ -139,8 +144,9 @@
                 }
             }
         }
-}
-// Benefits Section Ends
+    }
+
+    // Benefits Section Ends
 }
 
 @media (max-width: 480px) {}

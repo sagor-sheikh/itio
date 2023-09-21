@@ -28,33 +28,33 @@ document.addEventListener("DOMContentLoaded", function () {
       autoplaySpeed: 1500,
     });
 
-    // $(".card_slider").slick({
-    //   centerMode: true,
-    //   centerPadding: "0px",
-    //   slidesToShow: 3,
-    //   prevArrow: $(".prev-feedback"),
-    //   nextArrow: $(".next-feedback"),
-    //   responsive: [
-    //     {
-    //       breakpoint: 768,
-    //       settings: {
-    //         arrows: false,
-    //         centerMode: true,
-    //         centerPadding: "0px",
-    //         slidesToShow: 2,
-    //       },
-    //     },
-    //     {
-    //       breakpoint: 480,
-    //       settings: {
-    //         arrows: false,
-    //         centerMode: true,
-    //         centerPadding: "0px",
-    //         slidesToShow: 1,
-    //       },
-    //     },
-    //   ],
-    // });
+    $(".testimonial__slider").slick({
+      centerMode: true,
+      centerPadding: "0px",
+      slidesToShow: 3,
+      // prevArrow: $(".prev-feedback"),
+      // nextArrow: $(".next-feedback"),
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "0px",
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "0px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
 
     // Odometer Starts Here
     // Odometer

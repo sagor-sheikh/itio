@@ -45,7 +45,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
   background: rgba(83, 154, 178, 0.05);
 }
 
@@ -56,8 +56,8 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #3e90f0;
-  border: 2px solid #3e90f0;
+  background-color: #39B54A;
+  border: 2px solid #39B54A;
 }
 
 #backtotopup {
@@ -625,6 +625,10 @@ img {
   padding: 60px 110px;
 }
 
+.pd6 {
+  padding-top: 60px;
+}
+
 .button-header {
   padding: 16px 28px;
   justify-content: center;
@@ -910,6 +914,9 @@ img {
   .pd60 {
     padding: 40px 60px;
   }
+  .pd6 {
+    padding-top: 50px;
+  }
   .button-header {
     padding: 10px 20px;
   }
@@ -1120,6 +1127,9 @@ img {
   .pd60 {
     padding: 30px 20px;
   }
+  .pd6 {
+    padding-top: 40px;
+  }
   .button-header {
     padding: 8px 16px;
   }
@@ -1195,12 +1205,13 @@ header {
   position: absolute;
   flex-direction: column;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: white;
   border-radius: 8px;
   z-index: 999;
   pointer-events: none;
   transition: all 0.6s ease-in-out;
+  width: 160px;
 }
 .navbar__list-drop-menu li {
   margin-bottom: 10px;
@@ -1262,6 +1273,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer__iconbox a i {
+  color: #fff;
 }
 .footer__iconbox .insta {
   background-color: #C7981F;

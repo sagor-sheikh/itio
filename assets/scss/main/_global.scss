@@ -38,7 +38,7 @@ body {
 // Scroll bar Style Starts
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
   background: rgba(83, 154, 178, 0.05);
 }
 
@@ -49,8 +49,8 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #3e90f0;
-  border: 2px solid #3e90f0;
+  background-color: #39B54A;
+  border: 2px solid #39B54A;
 }
 
 // Scroll bar Style Ends
@@ -646,6 +646,9 @@ img {
 .pd60{
   padding: 60px 110px;
 }
+.pd6{
+  padding-top: 60px;
+}
 
 // Responsive Starts
 // Button Styles
@@ -988,7 +991,9 @@ img {
   .pd60{
     padding: 40px 60px;
   }
-
+  .pd6{
+    padding-top: 50px;
+  }
   .button-header{
     padding: 10px 20px;
   }
@@ -1244,6 +1249,9 @@ img {
   }
   .pd60{
     padding: 30px 20px;
+  }
+  .pd6{
+    padding-top: 40px;
   }
   .button-header{
     padding: 8px 16px;
