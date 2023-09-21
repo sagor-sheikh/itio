@@ -739,6 +739,29 @@ img {
   }
 }
 
+.button4 {
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  text-align: center;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  color: var(--text-orange);
+  border-radius: 8px;
+}
+.button4:hover {
+  color: white;
+  transition-delay: 0.2s;
+  animation: ani500 0.6s forwards;
+  background: radial-gradient(circle, #F66135 0.2em, transparent 0.3em) 6em 6em/1em 1em, radial-gradient(circle, #F66135 0.2em, transparent 0.3em) 0 0/1em 1em;
+}
+@keyframes ani500 {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
+}
+
 .play-btn {
   top: 50%;
   left: 50%;
@@ -898,6 +921,9 @@ img {
   }
   .button3 {
     padding: 10px 20px;
+  }
+  .button4 {
+    padding: 10px 16px;
   }
   .play-btn {
     top: 50%;
@@ -1105,6 +1131,9 @@ img {
   }
   .button3 {
     padding: 8px 16px;
+  }
+  .button4 {
+    padding: 8px 12px;
   }
 }
 header {
@@ -2138,6 +2167,86 @@ header {
   .blogdetails__replyfrom form div textarea::placeholder {
     font-size: 14px;
     color: #6E7486;
+  }
+}
+.culture__title-top {
+  color: var(--text-green);
+}
+.culture img {
+  width: 100%;
+}
+.culture__two {
+  height: 100%;
+  background-color: rgba(246, 97, 53, 0.12);
+  height: 100%;
+}
+.culture__two-title {
+  color: var(--text-orange);
+}
+.culture__four {
+  height: 100%;
+  background: rgba(22, 168, 122, 0.12);
+}
+.culture__four-button {
+  color: var(--text-green);
+}
+.culture__four-title {
+  color: var(--text-green);
+}
+
+.benefits__item-icon img {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.benefits__item h4 {
+  transition: 0.3s linear;
+}
+.benefits__item a {
+  color: var(--text-green);
+  transition: 0.3s linear;
+}
+.benefits__item:hover h4 {
+  color: var(--text-orange);
+  transition: 0.3s linear;
+}
+.benefits__item:hover a {
+  color: var(--text-orange);
+  transition: 0.3s linear;
+}
+
+.cofunder {
+  background: rgba(22, 168, 122, 0.06);
+}
+.cofunder__bg {
+  background-image: url("../images/co-funder.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cofunder__decs {
+  padding: 85px 0;
+}
+.cofunder__decs-top {
+  color: var(--text-green);
+}
+.cofunder__decs p {
+  color: var(--text-black);
+}
+
+@media (max-width: 991px) {
+  .cofunder__decs {
+    padding: 0 0;
+  }
+}
+@media (max-width: 575px) {
+  .culture__two {
+    padding: 50px 0;
+  }
+  .culture__four {
+    padding: 50px 0;
+  }
+  .benefits__item-icon img {
+    width: 80%;
   }
 }
 @media (max-width: 991px) {

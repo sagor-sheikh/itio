@@ -3,7 +3,6 @@
         border-top: 1px solid #E9E9E9;
         border-bottom: 1px solid #E9E9E9;
     }
-
     &__daniel {
         background: #EDFDF8;
 
@@ -11,7 +10,6 @@
             color: var(--text-green);
         }
     }
-
     &__previous {
         border-top: 1px solid #E9E9E9;
         border-bottom: 1px solid #E9E9E9;
@@ -20,11 +18,9 @@
             cursor: pointer;
         }
     }
-
     &__icons {
         &-item {}
     }
-
     &__slider {
         &-thumb {
             img {
@@ -32,13 +28,11 @@
             }
         }
     }
-
     &__comment {
         .gap-style {
             margin-left: 110px;
         }
     }
-
     &__dcontent {
         button {
             padding: 12px 24px;
@@ -47,7 +41,6 @@
             border: 1px solid #6E7486;
         }
     }
-
     &__cprofile {
         &-thumb {
             img {
@@ -55,7 +48,6 @@
             }
         }
     }
-
     &__replyfrom {
         padding: 40px;
         background: #F5F5F5;
@@ -125,7 +117,6 @@
         }
     }
 }
-
 @media (max-width: 575px) {}
 
 @media (max-width: 480px) {}

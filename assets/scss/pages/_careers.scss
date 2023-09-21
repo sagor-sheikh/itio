@@ -1,0 +1,146 @@
+// Culture Sections Starts
+.culture {
+    &__title {
+        &-top {
+            color: var(--text-green);
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__two {
+        height: 100%;
+        background-color: rgb(246, 97, 53, 0.12);
+        height: 100%;
+
+        &-title {
+            color: var(--text-orange);
+        }
+    }
+
+    &__four {
+        height: 100%;
+        background: rgb(22, 168, 122, 0.12);
+
+        &-button {
+            color: var(--text-green);
+        }
+
+        &-title {
+            color: var(--text-green);
+        }
+    }
+}
+
+// Culture Sections Ends
+// Benefits Section Starts
+.benefits {
+    &__item {
+
+        &-icon {
+            img {
+                max-width: fit-content;
+            }
+        }
+
+        h4 {
+            transition: 0.3s linear;
+        }
+
+        a {
+            color: var(--text-green);
+            transition: 0.3s linear;
+        }
+
+        &:hover h4 {
+            color: var(--text-orange);
+            transition: 0.3s linear;
+        }
+
+        &:hover a {
+            color: var(--text-orange);
+            transition: 0.3s linear;
+        }
+    }
+}
+
+// Benefits Section Ends
+// Co-Founder Section Starts
+.cofunder {
+    background: rgb(22, 168, 122, 0.06);
+
+    &__bg {
+        background-image: url("../images/co-funder.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__decs {
+        padding: 85px 0;
+
+        &-top {
+            color: var(--text-green);
+        }
+
+        p {
+            color: var(--text-black);
+        }
+    }
+}
+// Co-Founder Section Ends
+// Responsive styles
+@media (max-width: 1799px) {}
+
+@media (max-width: 1699px) {}
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1499px) {}
+
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    // Co-Founder Section Starts
+.cofunder {
+
+
+    &__decs {
+        padding: 0 0;
+    }
+}
+// Co-Founder Section Ends
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+// Culture Sections Starts
+.culture {
+        &__two {
+            padding: 50px 0;
+        }
+
+        &__four {
+            padding: 50px 0;
+        }
+}
+// Culture Sections Ends
+// Benefits Section Starts
+.benefits {
+        &__item {
+            &-icon {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+}
+// Benefits Section Ends
+}
+
+@media (max-width: 480px) {}
