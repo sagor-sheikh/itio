@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 @import "../css/bootstrap.min.css";
 @import "../css/plugins/materialicons.css";
-@import "../css/plugins/slick-theme.css";
 @import "../css/plugins/slick.css";
 @import "../css/plugins/odometer-min.css";
 @import "../css/plugins/all.min.css";
@@ -1178,7 +1177,6 @@ header {
 .navbar__list li a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   font-weight: 500;
   transition: all 0.8s ease;
   color: var(--text-black);
@@ -1222,7 +1220,7 @@ header {
   pointer-events: all;
 }
 .navbar__list-drop-menu.features {
-  right: 0;
+  left: 0;
 }
 .navbar__list-drop-menu.company {
   left: 0;
@@ -1968,6 +1966,10 @@ header {
   top: 120px;
 }
 
+.ourbg {
+  background-color: #F8F7F6;
+}
+
 @media (max-width: 1199px) {
   .details__extra span {
     width: 60px;
@@ -2332,7 +2334,7 @@ header {
 }
 @media (max-width: 575px) {
   .navbar {
-    padding: 15px 60px;
+    padding: 15px 30px;
   }
   .navbar .logo-sm img {
     width: 50%;

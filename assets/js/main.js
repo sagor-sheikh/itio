@@ -12,20 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.toggle("right-open");
     };
 
-    (() => {
-      toggleButtons.forEach((toggleButton) => {
-        toggleButton.addEventListener("mouseenter", () => {
-          toggleButton.firstElementChild.lastElementChild.classList.add("up");
-          toggleButton.lastElementChild.classList.add("open");
-        });
-    
-        toggleButton.addEventListener("mouseleave", () => {
-          toggleButton.firstElementChild.lastElementChild.classList.remove("up");
-          toggleButton.lastElementChild.classList.remove("open");
-        });
-      });
-    })();
 
+
+
+// Define your media query
+const mediaQuery = window.matchMedia('(max-width: 991px)');
+
+// Function to handle the media query change
+function handleMediaQueryChange(mediaQuery) {
+  if (mediaQuery.matches) {
     (() => {
       toggleButtons.forEach((toggleButton) => {
         toggleButton.addEventListener("click", () => {
@@ -34,24 +29,72 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     })();
+  } else {
+    (() => {
+      toggleButtons.forEach((toggleButton) => {
+        toggleButton.addEventListener("mouseenter", () => {
+          toggleButton.firstElementChild.lastElementChild.classList.add("up");
+          toggleButton.lastElementChild.classList.add("open");
+        });
+
+        toggleButton.addEventListener("mouseleave", () => {
+          toggleButton.firstElementChild.lastElementChild.classList.remove("up");
+          toggleButton.lastElementChild.classList.remove("open");
+        });
+      });
+    })();
+  }
+}
+
+// Initial check of the media query
+handleMediaQueryChange(mediaQuery);
+
+// Add a listener to handle changes in the media query
+mediaQuery.addListener(handleMediaQueryChange);
+
+
+
+    // const toggleButtons = document.querySelectorAll(".navbar__list-drop");
+    // const menu = document.querySelector("#menu-icon");
+    // const navbar = document.querySelector(".navbar__menu");
+
+    // menu.onclick = () => {
+    //   menu.classList.toggle("active");
+    //   navbar.classList.toggle("right-open");
+    // };
+
+    // (() => {
+    //   toggleButtons.forEach((toggleButton) => {
+    //     toggleButton.addEventListener("click", () => {
+    //       // Toggle the "up" and "open" classes for the clicked menu item
+    //       toggleButton.firstElementChild.lastElementChild.classList.toggle("up");
+    //       toggleButton.lastElementChild.classList.toggle("open");
+    //     });
+    //   });
+      
+    // })();
+
+    
+    
+
 
     // Pages TopUp Starts
     var btn = $('#backtotopup');
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       if ($(window).scrollTop() > 300) {
         btn.addClass('show');
       } else {
         btn.removeClass('show');
       }
     });
-    
-    btn.on('click', function(e) {
+
+    btn.on('click', function (e) {
       e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '300');
+      $('html, body').animate({ scrollTop: 0 }, '300');
     });
     // Pages TopUp Ends
     // Progress Bar Starts
-    
+
     // Progress Bar Ends
 
     // Profile
@@ -103,9 +146,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //   });
     // });
 
-      $(".slide-toggle").on("click", function () {
-        $(".box").toggleClass("show");
-      });
+    $(".slide-toggle").on("click", function () {
+      $(".box").toggleClass("show");
+    });
 
     //--clickable menu--
     //   $(".left-nav-icon").on("click", function () {

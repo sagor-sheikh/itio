@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      arrows: true,
+      arrows: false,
       autoplaySpeed: 1500,
     });
 
@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
       centerMode: true,
       centerPadding: "0px",
       slidesToShow: 3,
+      arrows: false,
       // prevArrow: $(".prev-feedback"),
       // nextArrow: $(".next-feedback"),
       responsive: [
         {
           breakpoint: 1199,
           settings: {
-            arrows: false,
             centerMode: true,
             centerPadding: "0px",
             slidesToShow: 2,
@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           breakpoint: 767,
           settings: {
-            arrows: false,
             centerMode: true,
             centerPadding: "0px",
             slidesToShow: 1,
