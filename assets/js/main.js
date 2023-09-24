@@ -52,32 +52,6 @@ handleMediaQueryChange(mediaQuery);
 // Add a listener to handle changes in the media query
 mediaQuery.addListener(handleMediaQueryChange);
 
-
-
-    // const toggleButtons = document.querySelectorAll(".navbar__list-drop");
-    // const menu = document.querySelector("#menu-icon");
-    // const navbar = document.querySelector(".navbar__menu");
-
-    // menu.onclick = () => {
-    //   menu.classList.toggle("active");
-    //   navbar.classList.toggle("right-open");
-    // };
-
-    // (() => {
-    //   toggleButtons.forEach((toggleButton) => {
-    //     toggleButton.addEventListener("click", () => {
-    //       // Toggle the "up" and "open" classes for the clicked menu item
-    //       toggleButton.firstElementChild.lastElementChild.classList.toggle("up");
-    //       toggleButton.lastElementChild.classList.toggle("open");
-    //     });
-    //   });
-      
-    // })();
-
-    
-    
-
-
     // Pages TopUp Starts
     var btn = $('#backtotopup');
     $(window).scroll(function () {
@@ -95,81 +69,10 @@ mediaQuery.addListener(handleMediaQueryChange);
     // Pages TopUp Ends
     // Progress Bar Starts
 
-    // Progress Bar Ends
-
-    // Profile
-    // $(".user_chat").on("click", function () {
-    //   $('.chat_area').toggleClass("show");
-    // $(this).parent().next('.chat_area').toggleClass("show");
-
-    // });
-
-
-
-    // Search Form setup js
-
-    // $(".nav-search").on("click", function () {
-    //   $(".search-input").toggleClass("show");
-    // });
-    //--clickable menu--
-
-
-
-
-    // $(".mclick").on("click", function () {
-    //   $(this).toggleClass("reply-active");
-    //   $(this).parent().next(".menucontent").slideToggle();
-    // });
-
-    //--clickable menu--
-
-    // Catagory Selete all checkboxes
-
-    // const selectAllCheckbox = $("#selectAll");
-    // const checkboxes = $(".checkbox");
-
-    // selectAllCheckbox.on("change", function () {
-    //   checkboxes.prop("checked", selectAllCheckbox.prop("checked"));
-    // });
-
-    // checkboxes.on("change", function () {
-    //   if (!this.checked) {
-    //     selectAllCheckbox.prop("checked", false);
-    //   }
-    // });
-
-    // Main content Right area
-    // $(document).ready(function () {
-    // $(".slide-toggle").click(function () {
-    //   $(".box").animate({
-    //     width: "toggle",
-    //   });
-    // });
 
     $(".slide-toggle").on("click", function () {
       $(".box").toggleClass("show");
     });
-
-    //--clickable menu--
-    //   $(".left-nav-icon").on("click", function () {
-    //     $(".left-nav-area").toggleClass("show");
-    //   });
-    // });
-
-    // Trade Toggle Volue Page
-    // $(".vol_toggles").on("click", function () {
-    //   $(this).toggleClass("reply-active");
-    //   $(this).parent().next(".vol_toggle_twos").slideToggle();
-    // });
-
-    // $(".vol_toggle").on("click", function () {
-    //   $(this).toggleClass("reply-active");
-    //   $(this).parent().next(".vol_toggle_two").slideToggle();
-    // });
-
-    // button Style
-
-    // Preloader
 
     // Preloader Starts
     $(".preloader").delay(300).animate({

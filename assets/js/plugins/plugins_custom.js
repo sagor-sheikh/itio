@@ -67,21 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
-    // Odometer Ends Here
-
-    // Typed js Starts Here
-    // var typed = new Typed("#typed", {
-    //   strings: ["Designer"],
-    //   typeSpeed: 100,
-    //   backSpeed: 100,
-    //   backDelay: 1000,
-    //   loop: true,
-    // });
-    // Typed js Ends Here
-
-    // Nice Selector Starts
-    $("select").niceSelect();
-    // Nice Selector Ends
 
   });
 });

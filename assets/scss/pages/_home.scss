@@ -101,6 +101,9 @@
         &-left {
             a {
                 color: var(--text-green);
+                &:hover{
+                    color: var(--text-orange);
+                }
             }
         }
 
@@ -110,9 +113,7 @@
             box-shadow: 0px 1px 3px 0px rgba(58, 58, 58, 0.05), 0px 1px 2px 0px rgba(58, 58, 58, 0.08);
         }
 
-        &:hover &-left a {
-            color: var(--text-orange);
-        }
+        
 
         .web-icon {
             background-color: #CE44FF;
